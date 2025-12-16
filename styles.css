@@ -87,48 +87,48 @@ body.inner{
 /* ========================= HOME – STATS ========================= */
 
 .stats-section{
-  background:#fff; /* ИСТО како services */
-  padding:100px 20px;
+  background:#fff;
+  padding:70px 20px; /* ↓ ПОМАЛО */
   text-align:center;
 }
 
 .stats-title{
   font-size:42px;
   font-weight:800;
-  margin-bottom:60px;
+  margin-bottom:40px; /* ↓ ПОМАЛО */
 }
 
 .stats-grid{
-  max-width:1100px;
+  max-width:1000px; /* ↓ ПОСТЕГНАТО */
   margin:0 auto;
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-  gap:40px;
+  gap:30px; /* ↓ ПОМАЛ GAP */
 }
 
 .stat-box{
   background:#fff;
-  padding:40px 20px;
+  padding:32px 20px; /* ↓ ПОМАЛ BOX */
   border-radius:18px;
-  box-shadow:0 12px 35px rgba(0,0,0,0.08);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
   transition:0.3s ease;
 }
 
 .stat-box:hover{
-  transform:translateY(-6px);
-  box-shadow:0 20px 45px rgba(0,0,0,0.12);
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px rgba(0,0,0,0.12);
 }
 
 .stat-number{
-  font-size:48px;
+  font-size:44px; /* ↓ МАЛКУ ПОМАЛО */
   font-weight:800;
   color:#C59D5F;
   display:block;
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
 
 .stat-label{
-  font-size:16px;
+  font-size:15px;
   color:#444;
 }
 
@@ -138,6 +138,8 @@ body.inner{
     font-size:32px;
   }
 }
+
+
 
 
 
