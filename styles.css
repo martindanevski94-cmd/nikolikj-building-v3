@@ -60,5 +60,40 @@ body.inner{
 body.inner{
   padding-top: 90px;
 }
+/* ========================= STATS SECTION ========================= */
+.stats-section{
+  padding:80px 20px;
+  background:#f5f5f5;
+}
+
+.stats-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+  text-align:center;
+}
+
+.stat-box{
+  background:#fff;
+  padding:40px 20px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stat-number{
+  font-size:48px;
+  font-weight:700;
+  color:#f5b301; /* accent */
+  display:block;
+  margin-bottom:10px;
+}
+
+.stat-label{
+  font-size:16px;
+  color:#444;
+}
+
 
 
