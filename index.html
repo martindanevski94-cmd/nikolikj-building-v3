@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKOLIKJ BUILDING DS</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="home">
+
+<!-- ================= HEADER ================= -->
+<header class="main-header header-hero">
+
+    <!-- LOGO -->
+   <a href="index.html" class="header-logo logo-box">
+  <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
+</a>
+
+
+    <!-- MOBILE MENU -->
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- NAV -->
+    <nav id="navMenu" class="nav-menu">
+        <a href="index.html" class="nav-link mk active">Дома</a>
+        <a href="about.html" class="nav-link mk">За нас</a>
+        <a href="gallery.html" class="nav-link mk">Галерија</a>
+        <a href="contact.html" class="nav-link mk">Контакт</a>
+
+        <a href="index.html" class="nav-link en hidden active">Home</a>
+        <a href="about.html" class="nav-link en hidden">About</a>
+        <a href="gallery.html" class="nav-link en hidden">Gallery</a>
+        <a href="contact.html" class="nav-link en hidden">Contact</a>
+
+        <!-- MOBILE LANG -->
+        <div class="mobile-lang">
+            <button onclick="setLanguage('mk')" class="flag-btn">
+                <img src="images/mk.svg" class="flag-icon"> MK
+            </button>
+            <button onclick="setLanguage('en')" class="flag-btn">
+                <img src="images/en.svg" class="flag-icon"> EN
+            </button>
+        </div>
+    </nav>
+
+    <!-- DESKTOP LANG -->
+    <div class="desktop-lang">
+        <button onclick="setLanguage('mk')" class="flag-btn">
+            <img src="images/mk.svg" class="flag-icon"> MK
+        </button>
+        <button onclick="setLanguage('en')" class="flag-btn">
+            <img src="images/en.svg" class="flag-icon"> EN
+        </button>
+    </div>
+
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image:url('images/hero.jpg');">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="mk">Николиќ Билдинг ДС</h1>
+            <h1 class="en hidden">Nikolikj Building DS</h1>
+
+            <p class="mk">Доверба, квалитет и сигурност</p>
+            <p class="en hidden">Trust, quality & reliability</p>
+
+            <a href="contact.html" class="hero-btn mk">Барај понуда</a>
+            <a href="contact.html" class="hero-btn en hidden">Request quote</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+<section class="services">
+
+    <h2 class="mk gold">Наши услуги</h2>
+    <h2 class="en hidden gold">Our Services</h2>
+
+    <div class="service-grid">
+
+        <!-- SERVICE 1 -->
+        <div class="service-box">
+            <div class="icon">🏠</div>
+            <h3 class="mk">Изградба на објекти</h3>
+            <h3 class="en hidden">Construction</h3>
+            <p class="mk">
+                Изведба на станбени и деловни објекти со целосна контрола на квалитет,
+                рокови и професионален пристап.
+            </p>
+            <p class="en hidden">
+                Construction of residential and commercial buildings with full quality
+                control, deadlines, and professional execution.
+            </p>
+        </div>
+
+        <!-- SERVICE 2 -->
+        <div class="service-box">
+            <div class="icon">🛠️</div>
+            <h3 class="mk">Реновирање</h3>
+            <h3 class="en hidden">Renovation</h3>
+            <p class="mk">
+                Комплетно реновирање и адаптација на постоечки простори според
+                потребите и визијата на клиентот.
+            </p>
+            <p class="en hidden">
+                Complete renovation and adaptation of existing spaces according to
+                client needs and vision.
+            </p>
+        </div>
+
+        <!-- SERVICE 3 -->
+        <div class="service-box">
+            <div class="icon">🖌️</div>
+            <h3 class="mk">Завршни работи</h3>
+            <h3 class="en hidden">Finishing Works</h3>
+            <p class="mk">
+                Прецизни завршни работи, молерисување и финални детали
+                со висок стандард на изведба.
+            </p>
+            <p class="en hidden">
+                Precise finishing works, painting, and final details with a high
+                standard of execution.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- GALLERY PREVIEW -->
+    <section class="preview">
+        <h2 class="mk gold">Галерија</h2>
+        <h2 class="en hidden gold">Gallery</h2>
+
+        <div class="preview-grid">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+        </div>
+
+        <a href="gallery.html" class="btn btn-gold mk">Види повеќе</a>
+        <a href="gallery.html" class="btn btn-gold en hidden">View more</a>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3 class="mk">Контакт</h3>
+            <h3 class="en hidden">Contact</h3>
+            <p>📍 Куманово, Македонија</p>
+            <p>📞 +389 75 306 563</p>
+            <p>✉️ gradezniusluginikolikj@gmail.com</p>
+        </div>
+
+        <div class="footer-column footer-logo">
+            <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
+        </div>
+
+        <div class="footer-column">
+            <h3 class="mk">Брзи линкови</h3>
+            <h3 class="en hidden">Quick Links</h3>
+            <a href="index.html" class="mk">Дома</a>
+            <a href="about.html" class="mk">За нас</a>
+            <a href="gallery.html" class="mk">Галерија</a>
+            <a href="contact.html" class="mk">Контакт</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="mk">© 2025 Николиќ Билдинг ДС. Сите права задржани.</p>
+        <p class="en hidden">© 2025 Nikolikj Building DS. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

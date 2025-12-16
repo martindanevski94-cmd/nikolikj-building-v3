@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт – Nikolikj Building DS</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="inner">
+
+<!-- ================= HEADER ================= -->
+<header class="main-header header-solid">
+
+    <a href="index.html" class="header-logo">
+        <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
+    </a>
+
+    <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link mk">Дома</a>
+        <a href="about.html" class="nav-link mk">За нас</a>
+        <a href="gallery.html" class="nav-link mk">Галерија</a>
+        <a href="contact.html" class="nav-link mk active">Контакт</a>
+
+        <a href="index.html" class="nav-link en hidden">Home</a>
+        <a href="about.html" class="nav-link en hidden">About</a>
+        <a href="gallery.html" class="nav-link en hidden">Gallery</a>
+        <a href="contact.html" class="nav-link en hidden active">Contact</a>
+
+        <div class="mobile-lang">
+            <button onclick="setLanguage('mk')" class="flag-btn">
+                <img src="images/mk.svg" class="flag-icon"> MK
+            </button>
+            <button onclick="setLanguage('en')" class="flag-btn">
+                <img src="images/en.svg" class="flag-icon"> EN
+            </button>
+        </div>
+    </nav>
+
+    <div class="desktop-lang">
+        <button onclick="setLanguage('mk')" class="flag-btn">
+            <img src="images/mk.svg" class="flag-icon"> MK
+        </button>
+        <button onclick="setLanguage('en')" class="flag-btn">
+            <img src="images/en.svg" class="flag-icon"> EN
+        </button>
+    </div>
+
+</header>
+
+<!-- ================= PAGE WRAPPER ================= -->
+<main class="page">
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-page">
+
+        <h1 class="mk gold">Контакт</h1>
+        <h1 class="en hidden gold">Contact</h1>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+            <p class="mk"><strong>📞 Телефон:</strong> +389 75 306 563</p>
+            <p class="en hidden"><strong>📞 Phone:</strong> +389 75 306 563</p>
+
+            <p class="mk"><strong>📩 Е-пошта:</strong> gradezniusluginikolikj@gmail.com</p>
+            <p class="en hidden"><strong>📩 Email:</strong> gradezniusluginikolikj@gmail.com</p>
+
+            <a href="https://wa.me/38975306563" class="btn">WhatsApp</a>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form method="POST" data-netlify="true" class="contact-form">
+
+            <input type="text" name="name" class="mk" placeholder="Вашето име" required>
+            <input type="text" name="name" class="en hidden" placeholder="Your Name" required>
+
+            <input type="email" name="email" class="mk" placeholder="Ваш Email" required>
+            <input type="email" name="email" class="en hidden" placeholder="Your Email" required>
+
+            <textarea name="message" class="mk" placeholder="Вашата порака" required></textarea>
+            <textarea name="message" class="en hidden" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn mk">Испрати порака</button>
+            <button type="submit" class="btn en hidden">Send Message</button>
+        </form>
+
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3 class="mk">Контакт</h3>
+            <h3 class="en hidden">Contact</h3>
+            <p>📍 Куманово, Македонија</p>
+            <p>📞 +389 75 306 563</p>
+            <p✉️ gradezniusluginikolikj@gmail.com</p>
+        </div>
+
+        <div class="footer-column footer-logo">
+            <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
+        </div>
+
+        <div class="footer-column">
+            <h3 class="mk">Брзи линкови</h3>
+            <h3 class="en hidden">Quick Links</h3>
+
+            <a href="index.html" class="mk">Дома</a>
+            <a href="index.html" class="en hidden">Home</a>
+
+            <a href="about.html" class="mk">За нас</a>
+            <a href="about.html" class="en hidden">About</a>
+
+            <a href="gallery.html" class="mk">Галерија</a>
+            <a href="gallery.html" class="en hidden">Gallery</a>
+
+            <a href="contact.html" class="mk">Контакт</a>
+            <a href="contact.html" class="en hidden">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p class="mk">© 2025 Николиќ Билдинг ДС. Сите права задржани.</p>
+        <p class="en hidden">© 2025 Nikolikj Building DS. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
