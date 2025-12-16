@@ -140,10 +140,6 @@ body.inner{
     font-size:32px;
   }
 }
-section{
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
 /* =========================
    FOOTER – FINAL FIX
 ========================= */
@@ -246,6 +242,7 @@ body.inner{
 body.home{
   padding-top: 0;
 }
+
 
 
 
