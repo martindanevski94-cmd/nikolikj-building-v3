@@ -238,6 +238,15 @@ section{
   align-items: center;
   justify-content: space-between;
 }
+/* BODY OFFSET FOR FIXED HEADER */
+body.inner{
+  padding-top: 90px;
+}
+
+body.home{
+  padding-top: 0;
+}
+
 
 
 
