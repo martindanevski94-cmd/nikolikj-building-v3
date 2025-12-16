@@ -62,14 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
     img.addEventListener("click", () => openLightbox(img.src));
   });
 
-  // keyboard support
   document.addEventListener("keydown", e => {
     if(document.getElementById("lightbox").classList.contains("hidden")) return;
     if(e.key === "ArrowRight") nextImage();
     if(e.key === "ArrowLeft") prevImage();
     if(e.key === "Escape") closeLightbox();
   });
-/* =========================
+
+  /* =========================
      STATS COUNT-UP ON SCROLL
   ========================= */
 
@@ -78,32 +78,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function animateStats() {
     statNumbers.forEach(stat => {
-      const target = +stat.getAttribute("data-target");
-      const isPercent = stat.textContent.includes("%");
-      const isPlus = stat.textContent.includes("+");
-      const is247 = target === 247;
-
+      const target = parseInt(stat.dataset.target);
+      const suffix = stat.dataset.suffix || "";
       let current = 0;
-      const increment = Math.ceil(target / 60);
+
+      const increment = Math.max(1, Math.floor(target / 60));
 
       const timer = setInterval(() => {
         current += increment;
 
         if (current >= target) {
           clearInterval(timer);
-
-          if (is247) {
-            stat.textContent = "24/7";
-          } else if (isPercent) {
-            stat.textContent = target + "%";
-          } else if (isPlus) {
-            stat.textContent = target + "+";
-          } else {
-            stat.textContent = target;
-          }
-
+          stat.textContent = target + suffix;
         } else {
-          stat.textContent = current;
+          stat.textContent = current + suffix;
         }
       }, 20);
     });
@@ -121,7 +109,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.4 });
 
   observer.observe(statsSection);
-}
-});
-  
 
+});
