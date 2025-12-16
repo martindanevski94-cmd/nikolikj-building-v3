@@ -71,3 +71,56 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+  /* =========================
+     STATS COUNT-UP ON SCROLL
+  ========================= */
+
+  const statNumbers = document.querySelectorAll(".stat-number");
+  let statsStarted = false;
+
+  function animateStats() {
+    statNumbers.forEach(stat => {
+      const target = +stat.getAttribute("data-target");
+      const isPercent = stat.textContent.includes("%");
+      const isPlus = stat.textContent.includes("+");
+      const is247 = target === 247;
+
+      let current = 0;
+      const increment = Math.ceil(target / 60);
+
+      const timer = setInterval(() => {
+        current += increment;
+
+        if (current >= target) {
+          clearInterval(timer);
+
+          if (is247) {
+            stat.textContent = "24/7";
+          } else if (isPercent) {
+            stat.textContent = target + "%";
+          } else if (isPlus) {
+            stat.textContent = target + "+";
+          } else {
+            stat.textContent = target;
+          }
+
+        } else {
+          stat.textContent = current;
+        }
+      }, 20);
+    });
+  }
+
+  const statsSection = document.querySelector(".stats-section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !statsStarted) {
+        statsStarted = true;
+        animateStats();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(statsSection);
+
