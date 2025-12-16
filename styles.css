@@ -159,6 +159,10 @@ body.inner{
     grid-template-columns:1fr;
   }
 }
+.stats-text{
+  margin-top:-30px;
+}
+
 
 
 
