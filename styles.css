@@ -85,30 +85,49 @@ body.inner{
   padding-top: 90px;
 }
 /* ========================= HOME – STATS SECTION ========================= */
+
 .stats-section{
   position: relative;
   width: 100%;
-  padding: 100px 20px;
+  padding: 80px 20px 110px;
   background: #f5f5f5;
   z-index: 2;
 }
 
+/* TITLE */
+.stats-title{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #222;
+  font-weight: 800;
+}
+
+/* GRID */
 .stats-grid{
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 во еден ред */
   gap: 40px;
   text-align: center;
 }
 
+/* CARD */
 .stat-box{
   background: #ffffff;
   padding: 40px 20px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
 }
 
+.stat-box:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+/* NUMBER */
 .stat-number{
   font-size: 48px;
   font-weight: 800;
@@ -117,28 +136,38 @@ body.inner{
   margin-bottom: 10px;
 }
 
+/* LABEL */
 .stat-label{
   font-size: 16px;
   color: #444;
 }
-.stats-title{
-  text-align:center;
-  font-size:36px;
-  margin-bottom:50px;
-  color:#222;
-  font-weight:800;
-}
-.stat-box{
-  transition:0.3s ease;
+
+/* ========================= RESPONSIVE ========================= */
+
+/* Tablet */
+@media (max-width: 900px){
+  .stats-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.stat-box:hover{
-  transform: translateY(-6px);
-  box-shadow:0 18px 45px rgba(0,0,0,0.12);
+/* Mobile */
+@media (max-width: 500px){
+  .stats-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .stats-title{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .stat-number{
+    font-size: 42px;
+  }
 }
-.stats-section{
-  padding-top:70px;
-}
+
+
 
 
 
