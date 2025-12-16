@@ -69,9 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(e.key === "ArrowLeft") prevImage();
     if(e.key === "Escape") closeLightbox();
   });
-
-});
-  /* =========================
+/* =========================
      STATS COUNT-UP ON SCROLL
   ========================= */
 
@@ -123,4 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.4 });
 
   observer.observe(statsSection);
+}
+});
+  
 
