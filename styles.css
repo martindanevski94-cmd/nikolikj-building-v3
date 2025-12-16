@@ -373,3 +373,39 @@ section{
     font-size:32px;
   }
 }
+/* =========================
+   SECTION DIVIDER
+========================= */
+.section-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  margin:60px auto 80px;
+  max-width:900px;
+}
+
+.divider-line{
+  flex:1;
+  height:1.5px;
+  background:#C59D5F;
+  opacity:0.7;
+}
+
+.divider-text{
+  font-size:18px;
+  font-weight:600;
+  color:#C59D5F;
+  white-space:nowrap;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .section-divider{
+    margin:45px auto 60px;
+  }
+  .divider-text{
+    font-size:16px;
+  }
+}
+
