@@ -108,8 +108,10 @@ body.inner{
   font-size:42px;
   font-weight:800;
   margin-bottom:50px;
-  text-align:center; /* или center ако сакаш */
+  text-align:center;
+  color:#C59D5F; /* 👈 ДОДАДИ ОВА */
 }
+
 
 /* RIGHT GRID */
 .stats-grid{
@@ -163,6 +165,7 @@ body.inner{
 .stats-text{
   margin-top:-30px;
 }
+
 
 
 
