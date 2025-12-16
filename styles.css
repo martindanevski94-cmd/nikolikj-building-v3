@@ -438,5 +438,63 @@ section{
   color:#C59D5F;
   white-space:nowrap;
 }
+/* =========================
+   ABOUT PAGE – FINAL LAYOUT
+========================= */
+.about{
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 20px 100px;
+
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  column-gap:60px;
+}
+
+/* LEFT COLUMN – TEXT */
+.about h1,
+.about h2,
+.about p{
+  grid-column:1;
+}
+
+/* WHY GRID ON RIGHT */
+.why-grid{
+  grid-column:2;
+  margin-top:40px;
+}
+
+/* WHY BOX */
+.why{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-align:left;
+}
+
+.why span{
+  font-size:22px;
+}
+
+/* BIG TEXT */
+.big-text{
+  font-size:18px;
+  line-height:1.9;
+  color:#444;
+  margin-bottom:30px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .why-grid{
+    grid-column:1;
+    margin-top:20px;
+  }
+}
+
 
 
