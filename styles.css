@@ -408,4 +408,35 @@ section{
     font-size:16px;
   }
 }
+/* =========================
+   SECTION DIVIDER – FIX
+========================= */
+.section-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:24px;
+
+  margin: 40px auto;     /* ⬅ клучно */
+  padding: 10px 0;       /* ⬅ да има „воздух“ */
+
+  max-width:900px;
+  position: relative;
+  z-index: 5;
+}
+
+.divider-line{
+  flex:1;
+  height:2px;
+  background:#C59D5F;
+  opacity:0.8;
+}
+
+.divider-text{
+  font-size:18px;
+  font-weight:700;
+  color:#C59D5F;
+  white-space:nowrap;
+}
+
 
