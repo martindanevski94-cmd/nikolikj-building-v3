@@ -181,11 +181,13 @@ section{
 }
 
 .footer-title{
-  color:#C59D5F;
+  color:#C59D5F;        /* GOLD */
   font-size:18px;
   font-weight:800;
-  margin-bottom: 6px;
+  margin-bottom:8px;
+  text-transform:none;
 }
+
 
 .footer-logo{
   align-items:center;
@@ -226,6 +228,7 @@ section{
     width: 110px;
   }
 }
+
 
 
 
