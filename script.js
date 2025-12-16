@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(e.key === "Escape") closeLightbox();
   });
 
-  /* =========================
+    /* =========================
      STATS COUNT-UP ON SCROLL
   ========================= */
 
@@ -99,15 +99,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const statsSection = document.querySelector(".stats-section");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !statsStarted) {
-        statsStarted = true;
-        animateStats();
-      }
-    });
-  }, { threshold: 0.4 });
+  // 👉 ОВА Е КЛУЧНО (SAFE CHECK)
+  if (statsSection) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !statsStarted) {
+          statsStarted = true;
+          animateStats();
+        }
+      });
+    }, { threshold: 0.4 });
 
-  observer.observe(statsSection);
+    observer.observe(statsSection);
+  }
 
 });
+
