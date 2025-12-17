@@ -1237,6 +1237,16 @@ section{
   margin-left:6px;
   white-space:nowrap;
 }
+/* =========================
+   SERVICES ICON SIZE FIX
+========================= */
+.service-box .icon{
+  font-size:52px;        /* пробај 48–56px */
+  display:block;
+  margin-bottom:16px;
+  line-height:1;
+}
+
 
 
 
