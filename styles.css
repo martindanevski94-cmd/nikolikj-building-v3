@@ -11,7 +11,14 @@ body{
   font-family:'Montserrat',sans-serif;
   background:#fff;
   color:#333;
-  padding-top:90px; /* OFFSET FOR FIXED HEADER */
+  padding-top:0; /* OFFSET FOR FIXED HEADER */
+}
+body.home{
+  padding-top:0;
+}
+
+body.inner{
+  padding-top:90px;
 }
 
 a{
@@ -42,6 +49,9 @@ a{
   justify-content:space-between;
   z-index:9999;
   background:#fff;
+}
+body.home .main-header{
+  background:transparent;
 }
 
 .header-hero{
@@ -355,6 +365,7 @@ section{
   white-space:nowrap;
 }
 /* ========================= ABOUT ========================= */ .about{ max-width:1100px; margin:60px auto 80px; /* ← ОВА Е КЛУЧНО */ padding:0 20px; text-align:left; } .about h1{ font-size:48px; font-weight:800; margin-bottom:25px; } .about h2{ font-size:30px; margin:70px 0 30px; } .gold{ color:#C59D5F; } .big-text{ font-size:18px; line-height:1.9; max-width:900px; color:#444; }
+
 
 
 
