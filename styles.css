@@ -606,6 +606,78 @@ section{
     gap:30px;
   }
 }
+/* =========================
+   ABOUT STATS
+========================= */
+.about-stats{
+  max-width:1000px;
+  margin:0 auto 120px;
+  padding:0 20px;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+  text-align:center;
+}
+
+.about-stats .stat{
+  background:#fafafa;
+  padding:40px 20px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.about-stats strong{
+  display:block;
+  font-size:44px;
+  font-weight:800;
+  color:#C59D5F;
+  margin-bottom:10px;
+}
+
+.about-stats span{
+  font-size:16px;
+  font-weight:600;
+  color:#444;
+}
+
+/* =========================
+   ABOUT CTA
+========================= */
+.about-cta{
+  background:linear-gradient(180deg,#f7f7f7,#ffffff);
+  padding:90px 20px;
+  text-align:center;
+}
+
+.about-cta p{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.about-cta .btn{
+  display:inline-block;
+  padding:14px 40px;
+  border-radius:14px;
+  background:#C59D5F;
+  color:#fff;
+  font-weight:700;
+  font-size:16px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .about-stats{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .about-cta p{
+    font-size:20px;
+  }
+}
+
 
 
 
