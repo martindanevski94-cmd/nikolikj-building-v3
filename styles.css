@@ -1184,6 +1184,34 @@ section{
 .preview .btn{
   margin:30px auto 0;
 }
+/* =========================
+   INTERNATIONAL – LIGHT PREMIUM
+========================= */
+.international{
+  margin:80px 0;
+  padding:45px 50px;
+  background:linear-gradient(135deg, #ffffff, #fafafa);
+  border-left:6px solid #C59D5F;
+  border-radius:22px;
+  box-shadow:0 20px 55px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.international h2{
+  margin-top:0;
+}
+
+/* TEXT */
+.international .big-text{
+  color:#333;
+}
+
+/* EMPHASIS */
+.international strong{
+  color:#C59D5F;
+  font-weight:800;
+}
+
 
 
 
