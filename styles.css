@@ -1286,6 +1286,221 @@ section{
     margin: 70px 0 24px;
   }
 }
+/* =========================
+   PREMIUM ABOUT PAGE
+========================= */
+
+.premium-about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+.gold {
+  color: #c9a24d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.premium-about h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.premium-about h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c9a24d;
+  margin-top: 16px;
+}
+
+.premium-about h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin: 100px 0 30px;
+}
+
+/* =========================
+   HERO WITH IMAGE (AMAZING PART)
+========================= */
+
+.about-hero {
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.88),
+      rgba(255,255,255,0.88)
+    ),
+    url("images/about-hero.jpg") center / cover no-repeat;
+
+  padding: 70px 60px;
+  margin: 40px 0 90px;
+  border-radius: 10px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #222;
+  max-width: 850px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   HERO HIGHLIGHTS
+========================= */
+
+.about-highlights {
+  display: flex;
+  gap: 50px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.highlight strong {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #c9a24d;
+  display: block;
+}
+
+.highlight span {
+  font-size: 0.85rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* =========================
+   SECONDARY TEXT
+========================= */
+
+.about-secondary {
+  margin-bottom: 120px;
+}
+
+.big-text {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  max-width: 900px;
+  color: #333;
+}
+
+/* =========================
+   INTERNATIONAL EXPERIENCE
+========================= */
+
+.international {
+  background: #f3f3f3;
+  padding: 80px 60px;
+  margin: 120px 0;
+  border-radius: 8px;
+}
+
+.international p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* =========================
+   WHY US GRID
+========================= */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin: 60px 0 130px;
+}
+
+.why {
+  background: #fff;
+  padding: 42px 32px;
+  border-radius: 10px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.why::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: #c9a24d;
+  transition: width 0.35s ease;
+}
+
+.why:hover::before {
+  width: 100%;
+}
+
+.why:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 65px rgba(0,0,0,0.14);
+}
+
+.why span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.why p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* =========================
+   VISION & MISSION
+========================= */
+
+.premium-about > p.big-text {
+  max-width: 900px;
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .premium-about {
+    padding: 80px 20px;
+  }
+
+  .about-hero {
+    padding: 45px 28px;
+  }
+
+  .about-highlights {
+    gap: 30px;
+  }
+
+  .premium-about h1 {
+    font-size: 36px;
+  }
+
+  .premium-about h2 {
+    font-size: 26px;
+    margin: 70px 0 24px;
+  }
+}
+
 
 
 
