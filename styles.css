@@ -952,6 +952,199 @@ section{
 .preview .btn{
   margin:30px auto 0;
 }
+/* =========================
+   ABOUT PAGE – CLEAN & FINAL
+========================= */
+
+/* MAIN WRAPPER */
+.premium-about{
+  max-width:1100px;
+  margin:0 auto;
+  padding:100px 24px 120px;
+}
+
+/* TITLES */
+.premium-about h1{
+  font-size:48px;
+  font-weight:800;
+  margin-bottom:30px;
+  color:#111;
+}
+
+.premium-about h1::after{
+  content:"";
+  display:block;
+  width:80px;
+  height:3px;
+  background:#C59D5F;
+  margin-top:14px;
+}
+
+.premium-about h2{
+  font-size:32px;
+  font-weight:700;
+  margin:80px 0 24px;
+  color:#111;
+}
+
+/* =========================
+   HERO INTRO (IMAGE BACKGROUND)
+========================= */
+
+.about-hero{
+  background:
+    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+    url("images/about-hero.jpg") center / cover no-repeat;
+
+  padding:70px 60px;
+  margin:40px 0 90px;
+  border-radius:16px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+}
+
+.about-hero p{
+  font-size:18px;
+  line-height:1.9;
+  max-width:850px;
+  color:#222;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.about-highlights{
+  display:flex;
+  gap:50px;
+  margin-top:35px;
+  flex-wrap:wrap;
+}
+
+.highlight strong{
+  font-size:30px;
+  font-weight:800;
+  color:#C59D5F;
+  display:block;
+}
+
+.highlight span{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:0.7px;
+  color:#444;
+}
+
+/* =========================
+   TEXT BLOCK
+========================= */
+
+.big-text{
+  font-size:17px;
+  line-height:1.9;
+  max-width:900px;
+  color:#333;
+  margin-bottom:30px;
+}
+
+/* =========================
+   INTERNATIONAL SECTION
+========================= */
+
+.international{
+  background:#f4f4f4;
+  padding:70px 60px;
+  border-radius:16px;
+  margin:100px 0;
+}
+
+.international p{
+  margin-bottom:18px;
+}
+
+/* =========================
+   WHY US GRID
+========================= */
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:32px;
+  margin:60px 0 120px;
+}
+
+.why{
+  background:#fff;
+  padding:40px 32px;
+  border-radius:16px;
+  box-shadow:0 18px 45px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+  position:relative;
+}
+
+.why::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:4px;
+  background:#C59D5F;
+  transition:0.3s;
+}
+
+.why:hover::before{
+  width:100%;
+}
+
+.why:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 65px rgba(0,0,0,0.15);
+}
+
+.why span{
+  font-size:34px;
+  display:block;
+  margin-bottom:18px;
+}
+
+.why p{
+  font-size:15px;
+  line-height:1.7;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .premium-about{
+    padding:80px 20px 100px;
+  }
+
+  .premium-about h1{
+    font-size:36px;
+  }
+
+  .premium-about h2{
+    font-size:26px;
+    margin-top:60px;
+  }
+
+  .about-hero{
+    padding:40px 26px;
+  }
+
+  .about-highlights{
+    gap:30px;
+  }
+
+  .highlight strong{
+    font-size:26px;
+  }
+
+}
+
 
 
 
