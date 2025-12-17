@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("#navMenu a").forEach(a => {
     a.addEventListener("click", () => {
-      document.getElementById("navMenu").classList.remove("active");
+      document.getElementById("navMenu").classList.remove("show");
     });
   });
 
@@ -114,5 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
 
