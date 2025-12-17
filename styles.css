@@ -1052,10 +1052,15 @@ section{
     margin:25px 0;
   }
 }
+/* =========================
+   GALLERY PREVIEW BUTTON FIX
+========================= */
 .preview .btn{
-  font-size:17px;
-  letter-spacing:0.5px;
+  margin: 30px auto 0;
+  display: inline-block;
 }
+
+
 
 
 
