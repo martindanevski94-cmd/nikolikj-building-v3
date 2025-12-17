@@ -58,37 +58,44 @@
     <!-- ================= CONTACT ================= -->
     <section class="contact-page">
 
-        <h1 class="mk gold">Контакт</h1>
-        <h1 class="en hidden gold">Contact</h1>
+  <h1 class="mk gold">Контакт</h1>
+  <h1 class="en hidden gold">Contact</h1>
 
-        <!-- CONTACT INFO -->
-        <div class="contact-info">
-            <p class="mk"><strong>📞 Телефон:</strong> +389 75 306 563</p>
-            <p class="en hidden"><strong>📞 Phone:</strong> +389 75 306 563</p>
+  <div class="contact-card">
 
-            <p class="mk"><strong>📩 Е-пошта:</strong> gradezniusluginikolikj@gmail.com</p>
-            <p class="en hidden"><strong>📩 Email:</strong> gradezniusluginikolikj@gmail.com</p>
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+      <p class="mk">📞 <strong>Телефон:</strong> +389 75 306 563</p>
+      <p class="en hidden">📞 <strong>Phone:</strong> +389 75 306 563</p>
 
-            <a href="https://wa.me/38975306563" class="btn">WhatsApp</a>
-        </div>
+      <p class="mk">✉️ <strong>Е-пошта:</strong> gradezniusluginikolikj@gmail.com</p>
+      <p class="en hidden">✉️ <strong>Email:</strong> gradezniusluginikolikj@gmail.com</p>
 
-        <!-- CONTACT FORM -->
-        <form method="POST" data-netlify="true" class="contact-form">
+      <a href="https://wa.me/38975306563" class="whatsapp-btn">WhatsApp</a>
+    </div>
 
-            <input type="text" name="name" class="mk" placeholder="Вашето име" required>
-            <input type="text" name="name" class="en hidden" placeholder="Your Name" required>
+    <!-- FORM -->
+    <form method="POST" data-netlify="true" class="contact-form">
 
-            <input type="email" name="email" class="mk" placeholder="Ваш Email" required>
-            <input type="email" name="email" class="en hidden" placeholder="Your Email" required>
+      <div class="form-row">
+        <input type="text" name="name" class="mk" placeholder="Вашето име" required>
+        <input type="text" name="name" class="en hidden" placeholder="Your Name" required>
 
-            <textarea name="message" class="mk" placeholder="Вашата порака" required></textarea>
-            <textarea name="message" class="en hidden" placeholder="Your Message" required></textarea>
+        <input type="email" name="email" class="mk" placeholder="Ваш Email" required>
+        <input type="email" name="email" class="en hidden" placeholder="Your Email" required>
+      </div>
 
-            <button type="submit" class="btn mk">Испрати порака</button>
-            <button type="submit" class="btn en hidden">Send Message</button>
-        </form>
+      <textarea name="message" class="mk" placeholder="Вашата порака" required></textarea>
+      <textarea name="message" class="en hidden" placeholder="Your Message" required></textarea>
 
-    </section>
+      <button type="submit" class="contact-submit mk">Испрати порака</button>
+      <button type="submit" class="contact-submit en hidden">Send Message</button>
+
+    </form>
+
+  </div>
+
+</section>
 
 </main>
 
@@ -135,3 +142,4 @@
 
 </body>
 </html>
+
