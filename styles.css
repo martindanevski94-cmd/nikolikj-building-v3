@@ -134,8 +134,8 @@ body.home .flag-btn{
 ========================= */
 .hero{
   position:relative;
-  height:100vh;
-  min-height:600px;
+  height:115vh;
+  min-height:700px;
   background-size:cover;
   background-position:center;
   display:flex;
@@ -1211,6 +1211,7 @@ section{
   color:#C59D5F;
   font-weight:800;
 }
+
 
 
 
