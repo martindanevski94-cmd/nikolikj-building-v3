@@ -643,6 +643,106 @@ section{
     margin:25px 0;
   }
 }
+/* =========================
+   CONTACT – CARD STYLE
+========================= */
+.contact-page{
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 20px 80px;
+  text-align:center;
+}
+
+.contact-page h1{
+  font-size:42px;
+  margin-bottom:40px;
+}
+
+/* CARD */
+.contact-card{
+  max-width:900px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:22px;
+  padding:40px 40px 50px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.12);
+}
+
+/* INFO */
+.contact-info{
+  margin-bottom:35px;
+  font-size:17px;
+}
+
+.contact-info p{
+  margin-bottom:10px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:14px 36px;
+  border-radius:14px;
+  background:#25D366;
+  color:#fff;
+  font-weight:700;
+  font-size:16px;
+}
+
+/* FORM */
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:16px 18px;
+  border-radius:16px;
+  border:1px solid #ddd;
+  font-family:'Montserrat',sans-serif;
+  font-size:15px;
+}
+
+.contact-form textarea{
+  min-height:160px;
+  resize:vertical;
+}
+
+/* SUBMIT */
+.contact-submit{
+  margin-top:10px;
+  align-self:center;
+  padding:14px 40px;
+  border-radius:18px;
+  background:#C59D5F;
+  color:#fff;
+  font-weight:800;
+  font-size:16px;
+  border:none;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-card{
+    padding:30px 20px 40px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+}
+
 
 
 
