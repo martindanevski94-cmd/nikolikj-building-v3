@@ -74,40 +74,28 @@
     </div>
 
     <!-- ✅ NETLIFY FORM -->
-    <form
-      name="contact"
-      method="POST"
-      action="/success.html"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      class="contact-form"
-    >
+   <form name="contact" method="POST" data-netlify="true" class="contact-form">
+  <input type="hidden" name="form-name" value="contact">
 
-      <!-- REQUIRED -->
-      <input type="hidden" name="form-name" value="contact">
+  <!-- MK -->
+  <div class="form-row mk">
+    <input type="text" name="name" placeholder="Вашето име" required>
+    <input type="email" name="email" placeholder="Ваш Email" required>
+  </div>
 
-      <!-- SPAM PROTECTION -->
-      <p hidden>
-        <label>Don’t fill this out: <input name="bot-field"></label>
-      </p>
+  <!-- EN (НЕ Е required) -->
+  <div class="form-row en hidden">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+  </div>
 
-      <!-- NAME -->
-      <input class="mk" type="text" name="name" placeholder="Вашето име" required>
-      <input class="en hidden" type="text" name="name" placeholder="Your Name" required>
+  <textarea name="message" class="mk" placeholder="Вашата порака" required></textarea>
+  <textarea name="message" class="en hidden" placeholder="Your Message"></textarea>
 
-      <!-- EMAIL -->
-      <input class="mk" type="email" name="email" placeholder="Ваш Email" required>
-      <input class="en hidden" type="email" name="email" placeholder="Your Email" required>
+  <button type="submit" class="contact-submit mk">Испрати порака</button>
+  <button type="submit" class="contact-submit en hidden">Send Message</button>
+</form>
 
-      <!-- MESSAGE -->
-      <textarea class="mk" name="message" placeholder="Вашата порака" required></textarea>
-      <textarea class="en hidden" name="message" placeholder="Your Message" required></textarea>
-
-      <!-- SUBMIT -->
-      <button type="submit" class="contact-submit mk">Испрати порака</button>
-      <button type="submit" class="contact-submit en hidden">Send Message</button>
-
-    </form>
 
   </div>
 </section>
@@ -157,3 +145,4 @@
 
 </body>
 </html>
+
