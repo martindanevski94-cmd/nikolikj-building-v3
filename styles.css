@@ -86,6 +86,16 @@ body.home .nav-link{
   border-bottom:2px solid #C59D5F;
   padding-bottom:3px;
 }
+/* =========================
+   DESKTOP DEFAULT
+========================= */
+.mobile-menu-btn{
+  display:none;
+}
+
+.mobile-lang{
+  display:none;
+}
 
 /* =========================
    LANGUAGE SWITCH
@@ -423,4 +433,5 @@ section{
     order:-1;
   }
 }
+
 
