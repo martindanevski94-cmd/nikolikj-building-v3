@@ -433,5 +433,48 @@ section{
     order:-1;
   }
 }
+/* =========================
+   MOBILE ONLY
+========================= */
+@media (max-width: 768px){
+
+  .nav-menu{
+    display:none;
+    position:absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    padding:25px 0;
+    gap:18px;
+    z-index:9998;
+  }
+
+  .nav-menu.show{
+    display:flex;
+  }
+
+  .mobile-menu-btn{
+    display:block;
+  }
+
+  .desktop-lang{
+    display:none;
+  }
+
+  .mobile-lang{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:15px;
+  }
+
+  body.home .nav-link{
+    color:#333;
+    text-shadow:none;
+  }
+}
+
 
 
