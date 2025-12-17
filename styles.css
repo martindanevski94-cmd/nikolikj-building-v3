@@ -1020,48 +1020,6 @@ section{
   margin-bottom:16px;
   line-height:1;
 }
-/* =========================
-   PREMIUM ABOUT PAGE – LIGHT VERSION
-========================= */
-
-.premium-about {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 120px 24px;
-}
-
-/* =========================
-   TITLES
-========================= */
-
-.gold {
-  color: #c9a24d;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.premium-about h1 {
-  font-size: 48px;
-  font-weight: 800;
-  color: #111;
-  margin-bottom: 40px;
-}
-
-.premium-about h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #c9a24d;
-  margin-top: 16px;
-}
-
-.premium-about h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #111;
-  margin: 100px 0 30px;
-}
 
 /* =========================
    HERO INTRO (LIGHT & READABLE)
@@ -1197,73 +1155,6 @@ section{
     font-size: 26px;
     margin: 70px 0 24px;
   }
-}
-/* =========================
-   ABOUT PAGE – FINAL VERSION
-========================= */
-
-/* CONTAINER */
-.premium-about {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 110px 24px;
-  display: block;
-}
-
-/* =========================
-   TITLES
-========================= */
-
-.gold {
-  color: #c9a24d;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.premium-about h1 {
-  font-size: 48px;
-  font-weight: 800;
-  color: #111;
-  margin-bottom: 40px;
-}
-
-.premium-about h1::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #c9a24d;
-  margin-top: 16px;
-}
-
-.premium-about h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #111;
-  margin: 100px 0 30px;
-}
-
-/* =========================
-   HERO SECTION (IMAGE + TEXT)
-========================= */
-
-.about-hero {
-  background:
-    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
-    url("images/about-hero.jpg") center / cover no-repeat;
-
-  padding: 70px 60px;
-  margin: 40px 0 90px;
-  border-radius: 12px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
-}
-
-.about-hero p {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  color: #222;
-  max-width: 850px;
-  margin-bottom: 20px;
 }
 
 /* =========================
@@ -1419,6 +1310,7 @@ section{
     margin: 70px 0 24px;
   }
 }
+
 
 
 
