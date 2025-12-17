@@ -1164,11 +1164,13 @@ section{
 
 /* HERO */
 .about-hero{
-  background:#f8f8f8;
-  padding:50px 50px;
-  border-left:6px solid #C59D5F;
-  border-radius:18px;
-  margin-bottom:60px;
+  background:
+    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+    url("images/about-hero.jpg") center / cover no-repeat;
+
+  padding: 60px;
+  border-radius: 14px;
+  margin: 40px 0 80px;
 }
 
 .about-hero p{
@@ -1264,6 +1266,7 @@ section{
     font-size:34px;
   }
 }
+
 
 
 
