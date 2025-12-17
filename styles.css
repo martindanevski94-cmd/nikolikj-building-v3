@@ -1428,6 +1428,19 @@ section{
   line-height:1.6;
   max-width:220px;
 }
+/* =========================
+   WHY US – CTA BUTTON
+========================= */
+.why-cta{
+  margin:60px auto 0;
+  text-align:center;
+}
+
+.why-cta .btn{
+  font-size:18px;
+  padding:16px 46px;
+}
+
 
 
 
