@@ -1225,6 +1225,18 @@ section{
   color:#C59D5F;
   font-weight:800;
 }
+@media (max-width: 768px){
+  .nav-menu{
+    z-index:99999;
+  }
+
+  .hero,
+  .hero-overlay,
+  .hero::after{
+    pointer-events:none;
+  }
+}
+
 
 
 
