@@ -1266,6 +1266,17 @@ section{
     font-size:34px;
   }
 }
+/* =========================
+   ABOUT – HERO SUBTEXT
+========================= */
+.about-hero .hero-subtext{
+  margin-top:18px;
+  font-size:1.05rem;
+  line-height:1.85;
+  color:#333;
+  max-width:820px;
+}
+
 
 
 
