@@ -1212,17 +1212,76 @@ section{
   color:#333;
 }
 
-/* INTERNATIONAL */
-.international{
-  background:#fafafa;
-  padding:60px 50px;
-  border-radius:20px;
-  margin:80px 0;
+/* =========================
+   INTERNATIONAL – IMAGE + TRUST BADGE
+========================= */
+
+.international-hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  margin:120px 0;
 }
 
-.international h2{
-  margin-bottom:30px;
+.international-media{
+  position:relative;
 }
+
+.international-media img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:22px;
+  box-shadow:0 22px 55px rgba(0,0,0,0.18);
+}
+
+/* TRUST BADGE */
+.trust-badge{
+  position:absolute;
+  bottom:22px;
+  left:22px;
+  background:#111;
+  color:#fff;
+  padding:16px 20px;
+  border-radius:14px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+.trust-badge span{
+  display:block;
+  font-size:28px;
+  font-weight:800;
+  color:#C59D5F;
+  line-height:1;
+}
+
+.trust-badge small{
+  display:block;
+  font-size:12px;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+  opacity:0.9;
+}
+
+/* TEXT */
+.international-content .big-text{
+  max-width:520px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .international-hero{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .international-media img{
+    height:300px;
+  }
+}
+
 
 /* WHY */
 .why-grid{
@@ -1276,6 +1335,7 @@ section{
   color:#333;
   max-width:820px;
 }
+
 
 
 
