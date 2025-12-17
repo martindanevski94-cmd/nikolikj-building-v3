@@ -1144,6 +1144,98 @@ section{
   }
 
 }
+/* =========================
+   ABOUT PAGE – FINAL OVERRIDE
+========================= */
+
+.page .premium-about{
+  max-width:1100px;
+  margin:0 auto;
+  padding:120px 24px 80px;
+}
+
+/* HERO */
+.page .premium-about .about-hero{
+  background:
+    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+    url("images/about-hero.jpg") center/cover no-repeat;
+  padding:70px 60px;
+  border-radius:14px;
+  margin:40px 0 80px;
+  box-shadow:0 30px 70px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.page .premium-about p{
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#222;
+}
+
+/* HIGHLIGHTS */
+.page .about-highlights{
+  display:flex;
+  gap:50px;
+  margin-top:35px;
+  flex-wrap:wrap;
+}
+
+.page .highlight strong{
+  font-size:2rem;
+  font-weight:800;
+  color:#C59D5F;
+}
+
+.page .highlight span{
+  font-size:0.85rem;
+  text-transform:uppercase;
+  letter-spacing:0.6px;
+}
+
+/* SECONDARY */
+.page .about-secondary{
+  margin:90px 0;
+}
+
+/* INTERNATIONAL */
+.page .international{
+  background:#f4f4f4;
+  padding:70px 60px;
+  border-radius:14px;
+  margin:110px 0;
+}
+
+/* WHY US */
+.page .why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin:70px 0 120px;
+}
+
+.page .why{
+  background:#fff;
+  padding:40px 30px;
+  border-radius:14px;
+  box-shadow:0 18px 45px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+}
+
+.page .why:hover{
+  transform:translateY(-6px);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .page .premium-about{
+    padding:90px 20px;
+  }
+
+  .page .premium-about .about-hero{
+    padding:45px 28px;
+  }
+}
+
 
 
 
