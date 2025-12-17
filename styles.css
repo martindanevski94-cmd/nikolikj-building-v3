@@ -143,6 +143,20 @@ body.home .flag-btn{
   justify-content:center;
   text-align:center;
 }
+.hero::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:140px;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    #fff
+  );
+  z-index:1;
+}
 
 /* ⬅️ КЛУЧОТ */
 body.home .hero{
@@ -1211,6 +1225,7 @@ section{
   color:#C59D5F;
   font-weight:800;
 }
+
 
 
 
