@@ -1052,6 +1052,11 @@ section{
     margin:25px 0;
   }
 }
+.preview .btn{
+  font-size:17px;
+  letter-spacing:0.5px;
+}
+
 
 
 
