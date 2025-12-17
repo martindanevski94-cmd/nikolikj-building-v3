@@ -1412,6 +1412,10 @@ section{
     margin: 70px 0 24px;
   }
 }
+.hidden {
+  display: none !important;
+}
+
 
 
 
