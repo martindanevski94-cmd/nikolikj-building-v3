@@ -1145,96 +1145,127 @@ section{
 
 }
 /* =========================
-   ABOUT PAGE – FINAL OVERRIDE
+   ABOUT PAGE – CLEAN FINAL
 ========================= */
 
-.page .premium-about{
+.premium-about{
   max-width:1100px;
   margin:0 auto;
-  padding:120px 24px 80px;
+  padding:80px 20px;
+}
+
+/* TITLE */
+.premium-about h1{
+  font-size:42px;
+  font-weight:800;
+  margin-bottom:40px;
+  color:#111;
 }
 
 /* HERO */
-.page .premium-about .about-hero{
-  background:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-    url("images/about-hero.jpg") center/cover no-repeat;
-  padding:70px 60px;
-  border-radius:14px;
-  margin:40px 0 80px;
-  box-shadow:0 30px 70px rgba(0,0,0,0.1);
+.about-hero{
+  background:#f8f8f8;
+  padding:50px 50px;
+  border-left:6px solid #C59D5F;
+  border-radius:18px;
+  margin-bottom:60px;
 }
 
-/* TEXT */
-.page .premium-about p{
-  font-size:1.05rem;
+.about-hero p{
+  font-size:18px;
   line-height:1.9;
   color:#222;
+  max-width:850px;
 }
 
 /* HIGHLIGHTS */
-.page .about-highlights{
+.about-highlights{
   display:flex;
-  gap:50px;
-  margin-top:35px;
+  gap:40px;
+  margin-top:30px;
   flex-wrap:wrap;
 }
 
-.page .highlight strong{
-  font-size:2rem;
-  font-weight:800;
+.highlight strong{
+  font-size:32px;
   color:#C59D5F;
+  display:block;
 }
 
-.page .highlight span{
-  font-size:0.85rem;
+.highlight span{
+  font-size:14px;
   text-transform:uppercase;
-  letter-spacing:0.6px;
+  letter-spacing:1px;
 }
 
 /* SECONDARY */
-.page .about-secondary{
-  margin:90px 0;
+.about-secondary{
+  margin:60px 0;
+}
+
+.big-text{
+  font-size:18px;
+  line-height:1.9;
+  max-width:900px;
+  color:#333;
 }
 
 /* INTERNATIONAL */
-.page .international{
-  background:#f4f4f4;
-  padding:70px 60px;
-  border-radius:14px;
-  margin:110px 0;
+.international{
+  background:#fafafa;
+  padding:60px 50px;
+  border-radius:20px;
+  margin:80px 0;
 }
 
-/* WHY US */
-.page .why-grid{
+.international h2{
+  margin-bottom:30px;
+}
+
+/* WHY */
+.why-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:30px;
-  margin:70px 0 120px;
+  margin:50px 0 80px;
 }
 
-.page .why{
+.why{
   background:#fff;
-  padding:40px 30px;
-  border-radius:14px;
-  box-shadow:0 18px 45px rgba(0,0,0,0.08);
+  padding:35px 30px;
+  border-radius:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
   transition:0.3s ease;
 }
 
-.page .why:hover{
+.why:hover{
   transform:translateY(-6px);
+  box-shadow:0 25px 55px rgba(0,0,0,0.12);
+}
+
+.why span{
+  font-size:34px;
+  display:block;
+  margin-bottom:15px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  .page .premium-about{
-    padding:90px 20px;
+  .about-hero,
+  .international{
+    padding:35px 25px;
   }
 
-  .page .premium-about .about-hero{
-    padding:45px 28px;
+  .about-highlights{
+    gap:25px;
+  }
+
+  .premium-about h1{
+    font-size:34px;
   }
 }
+
+
 
 
 
