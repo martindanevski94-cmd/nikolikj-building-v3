@@ -1,61 +1,4 @@
-<!DOCTYPE html>
-<html lang="mk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>За нас – Nikolikj Building DS</title>
-
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-
-<body class="inner">
-
-<!-- ================= HEADER ================= -->
-<header class="main-header header-solid">
-
-    <a href="index.html" class="header-logo">
-        <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
-    </a>
-
-    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-
-    <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link mk">Дома</a>
-        <a href="about.html" class="nav-link mk active">За нас</a>
-        <a href="gallery.html" class="nav-link mk">Галерија</a>
-        <a href="contact.html" class="nav-link mk">Контакт</a>
-
-        <a href="index.html" class="nav-link en hidden">Home</a>
-        <a href="about.html" class="nav-link en hidden active">About</a>
-        <a href="gallery.html" class="nav-link en hidden">Gallery</a>
-        <a href="contact.html" class="nav-link en hidden">Contact</a>
-
-        <div class="mobile-lang">
-            <button onclick="setLanguage('mk')" class="flag-btn">
-                <img src="images/mk.svg" class="flag-icon"> MK
-            </button>
-            <button onclick="setLanguage('en')" class="flag-btn">
-                <img src="images/en.svg" class="flag-icon"> EN
-            </button>
-        </div>
-    </nav>
-
-    <div class="desktop-lang">
-        <button onclick="setLanguage('mk')" class="flag-btn">
-            <img src="images/mk.svg" class="flag-icon"> MK
-        </button>
-        <button onclick="setLanguage('en')" class="flag-btn">
-            <img src="images/en.svg" class="flag-icon"> EN
-        </button>
-    </div>
-
-</header>
-
-<!-- ================= MAIN ================= -->
-<main>
-
-    <section class="about premium-about">
+<section class="about premium-about">
 
   <!-- TITLE -->
   <h1 class="mk gold">За нас</h1>
@@ -63,6 +6,7 @@
 
   <!-- HERO INTRO -->
   <div class="about-hero">
+
     <p class="mk">
       <strong>Николиќ Билдинг ДС</strong> е професионална градежна компанија со
       повеќе од <strong>10 години активно искуство</strong>, специјализирана во
@@ -74,30 +18,54 @@
       with over <strong>10 years of hands-on experience</strong>, specialized in
       delivering safe, functional, and high-quality buildings built to last.
     </p>
+
+    <!-- HERO HIGHLIGHTS -->
+    <div class="about-highlights">
+
+      <div class="highlight">
+        <strong>10+</strong>
+        <span class="mk">години искуство</span>
+        <span class="en hidden">years experience</span>
+      </div>
+
+      <div class="highlight">
+        <strong>DE</strong>
+        <span class="mk">Германија</span>
+        <span class="en hidden">Germany</span>
+      </div>
+
+      <div class="highlight">
+        <strong>EU</strong>
+        <span class="mk">стандарди</span>
+        <span class="en hidden">standards</span>
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- INTRO TEXT -->
-   <div class="about-secondary">
+  <!-- SECONDARY INTRO -->
+  <div class="about-secondary">
 
-  <p class="mk big-text">
-    Со текот на годините, изградивме силна репутација заснована на доверба,
-    одговорност и беспрекорна изведба. Нашиот пристап се темели на прецизно
-    планирање, внимателна организација и целосна посветеност кон секој проект –
-    од првата идеја до финалната реализација.
-  </p>
+    <p class="mk big-text">
+      Со текот на годините, изградивме силна репутација заснована на доверба,
+      одговорност и беспрекорна изведба. Нашиот пристап се темели на прецизно
+      планирање, внимателна организација и целосна посветеност кон секој проект –
+      од првата идеја до финалната реализација.
+    </p>
 
-  <p class="en hidden big-text">
-    Over the years, we have built a strong reputation based on trust,
-    responsibility, and flawless execution. Our approach is rooted in precise
-    planning, careful organization, and full dedication to every project—from
-    initial concept to final delivery.
-  </p>
+    <p class="en hidden big-text">
+      Over the years, we have built a strong reputation based on trust,
+      responsibility, and flawless execution. Our approach is rooted in precise
+      planning, careful organization, and full dedication to every project—from
+      initial concept to final delivery.
+    </p>
 
-</div>
-
+  </div>
 
   <!-- INTERNATIONAL EXPERIENCE -->
   <div class="international">
+
     <h2 class="mk gold">Меѓународно искуство</h2>
     <h2 class="en hidden gold">International Experience</h2>
 
@@ -126,6 +94,7 @@
       techniques, modern materials, and a disciplined workflow on every project,
       regardless of scale or complexity.
     </p>
+
   </div>
 
   <!-- WHY US -->
@@ -192,58 +161,3 @@
   </p>
 
 </section>
-
-
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="footer-container">
-
-    <div class="footer-col">
-      <h3 class="footer-title mk">Контакт</h3>
-      <h3 class="footer-title en hidden">Contact</h3>
-      <p>📍 Куманово, Македонија</p>
-      <p>📞 +389 75 306 563</p>
-      <p>✉️ gradezniusluginikolikj@gmail.com</p>
-    </div>
-
-    <div class="footer-col footer-logo">
-      <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
-    </div>
-
-    <div class="footer-col">
-      <h3 class="footer-title mk">Брзи линкови</h3>
-      <h3 class="footer-title en hidden">Quick Links</h3>
-
-      <a href="index.html" class="mk">Дома</a>
-      <a href="index.html" class="en hidden">Home</a>
-
-      <a href="about.html" class="mk">За нас</a>
-      <a href="about.html" class="en hidden">About</a>
-
-      <a href="gallery.html" class="mk">Галерија</a>
-      <a href="gallery.html" class="en hidden">Gallery</a>
-
-      <a href="contact.html" class="mk">Контакт</a>
-      <a href="contact.html" class="en hidden">Contact</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p class="mk">© 2025 Николиќ Билдинг ДС. Сите права задржани.</p>
-    <p class="en hidden">© 2025 Nikolikj Building DS. All rights reserved.</p>
-  </div>
-</footer>
-
-
-</body>
-</html>
-
-
-
-
-
-
