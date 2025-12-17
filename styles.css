@@ -1440,6 +1440,25 @@ section{
   font-size:18px;
   padding:16px 46px;
 }
+/* =========================
+   ABOUT PAGE TITLE FIX
+========================= */
+.about.premium-about h1{
+  font-size:38px;
+  font-weight:800;
+  color:#C59D5F;
+  margin-bottom:45px;
+  letter-spacing:0.5px;
+}
+
+/* mobile */
+@media(max-width:768px){
+  .about.premium-about h1{
+    font-size:30px;
+    margin-bottom:35px;
+  }
+}
+
 
 
 
