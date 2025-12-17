@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="mk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакт – Nikolikj Building DS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакт – Nikolikj Building DS</title>
 
-    <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body class="inner">
@@ -14,49 +14,48 @@
 <!-- ================= HEADER ================= -->
 <header class="main-header header-solid">
 
-    <a href="index.html" class="header-logo">
-        <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
-    </a>
+  <a href="index.html" class="header-logo">
+    <img src="images/logo.png" alt="NIKOLIKJ BUILDING DS">
+  </a>
 
-    <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
 
-    <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link mk">Дома</a>
-        <a href="about.html" class="nav-link mk">За нас</a>
-        <a href="gallery.html" class="nav-link mk">Галерија</a>
-        <a href="contact.html" class="nav-link mk active">Контакт</a>
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html" class="nav-link mk">Дома</a>
+    <a href="about.html" class="nav-link mk">За нас</a>
+    <a href="gallery.html" class="nav-link mk">Галерија</a>
+    <a href="contact.html" class="nav-link mk active">Контакт</a>
 
-        <a href="index.html" class="nav-link en hidden">Home</a>
-        <a href="about.html" class="nav-link en hidden">About</a>
-        <a href="gallery.html" class="nav-link en hidden">Gallery</a>
-        <a href="contact.html" class="nav-link en hidden active">Contact</a>
+    <a href="index.html" class="nav-link en hidden">Home</a>
+    <a href="about.html" class="nav-link en hidden">About</a>
+    <a href="gallery.html" class="nav-link en hidden">Gallery</a>
+    <a href="contact.html" class="nav-link en hidden active">Contact</a>
 
-        <div class="mobile-lang">
-            <button onclick="setLanguage('mk')" class="flag-btn">
-                <img src="images/mk.svg" class="flag-icon"> MK
-            </button>
-            <button onclick="setLanguage('en')" class="flag-btn">
-                <img src="images/en.svg" class="flag-icon"> EN
-            </button>
-        </div>
-    </nav>
-
-    <div class="desktop-lang">
-        <button onclick="setLanguage('mk')" class="flag-btn">
-            <img src="images/mk.svg" class="flag-icon"> MK
-        </button>
-        <button onclick="setLanguage('en')" class="flag-btn">
-            <img src="images/en.svg" class="flag-icon"> EN
-        </button>
+    <div class="mobile-lang">
+      <button onclick="setLanguage('mk')" class="flag-btn">
+        <img src="images/mk.svg" class="flag-icon"> MK
+      </button>
+      <button onclick="setLanguage('en')" class="flag-btn">
+        <img src="images/en.svg" class="flag-icon"> EN
+      </button>
     </div>
+  </nav>
+
+  <div class="desktop-lang">
+    <button onclick="setLanguage('mk')" class="flag-btn">
+      <img src="images/mk.svg" class="flag-icon"> MK
+    </button>
+    <button onclick="setLanguage('en')" class="flag-btn">
+      <img src="images/en.svg" class="flag-icon"> EN
+    </button>
+  </div>
 
 </header>
 
-<!-- ================= PAGE WRAPPER ================= -->
+<!-- ================= PAGE ================= -->
 <main class="page">
 
-    <!-- ================= CONTACT ================= -->
-    <section class="contact-page">
+<section class="contact-page">
 
   <h1 class="mk gold">Контакт</h1>
   <h1 class="en hidden gold">Contact</h1>
@@ -74,34 +73,43 @@
       <a href="https://wa.me/38975306563" class="whatsapp-btn">WhatsApp</a>
     </div>
 
-    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <!-- ✅ NETLIFY FORM -->
+    <form
+      name="contact"
+      method="POST"
+      action="/success.html"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="contact-form"
+    >
 
-  <input type="hidden" name="form-name" value="contact">
+      <!-- REQUIRED -->
+      <input type="hidden" name="form-name" value="contact">
 
+      <!-- SPAM PROTECTION -->
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
 
-  <!-- MK ROW -->
-  <div class="form-row mk">
-    <input type="text" name="name" placeholder="Вашето име" required>
-    <input type="email" name="email" placeholder="Ваш Email" required>
+      <!-- NAME -->
+      <input class="mk" type="text" name="name" placeholder="Вашето име" required>
+      <input class="en hidden" type="text" name="name" placeholder="Your Name" required>
+
+      <!-- EMAIL -->
+      <input class="mk" type="email" name="email" placeholder="Ваш Email" required>
+      <input class="en hidden" type="email" name="email" placeholder="Your Email" required>
+
+      <!-- MESSAGE -->
+      <textarea class="mk" name="message" placeholder="Вашата порака" required></textarea>
+      <textarea class="en hidden" name="message" placeholder="Your Message" required></textarea>
+
+      <!-- SUBMIT -->
+      <button type="submit" class="contact-submit mk">Испрати порака</button>
+      <button type="submit" class="contact-submit en hidden">Send Message</button>
+
+    </form>
+
   </div>
-
-  <!-- EN ROW -->
-  <div class="form-row en hidden">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-  </div>
-
-  <textarea name="message" class="mk" placeholder="Вашата порака" required></textarea>
-  <textarea name="message" class="en hidden" placeholder="Your Message" required></textarea>
-
-  <button type="submit" class="contact-submit mk">Испрати порака</button>
-  <button type="submit" class="contact-submit en hidden">Send Message</button>
-
-</form>
-
-
-  </div>
-
 </section>
 
 </main>
@@ -147,9 +155,5 @@
   </div>
 </footer>
 
-
 </body>
 </html>
-
-
-
