@@ -1405,6 +1405,30 @@ section{
     gap:12px;
   }
 }
+/* =========================
+   WHY US – ICON CENTERING
+========================= */
+
+.why{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.why span{
+  font-size:42px;          /* икона поголема */
+  margin-bottom:18px;
+  line-height:1;
+}
+
+.why p{
+  font-size:15.5px;
+  line-height:1.6;
+  max-width:220px;
+}
+
 
 
 
