@@ -1109,7 +1109,7 @@ section{
   line-height:1;
 }
 /* =========================
-   PREMIUM ABOUT PAGE
+   PREMIUM ABOUT PAGE – LIGHT VERSION
 ========================= */
 
 .premium-about {
@@ -1118,29 +1118,61 @@ section{
   padding: 120px 24px;
 }
 
-/* GOLD TITLE */
+/* =========================
+   TITLES
+========================= */
+
 .gold {
   color: #c9a24d;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-/* HERO INTRO */
+.premium-about h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.premium-about h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #c9a24d;
+  margin-top: 16px;
+}
+
+.premium-about h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin: 100px 0 30px;
+}
+
+/* =========================
+   HERO INTRO (LIGHT & READABLE)
+========================= */
+
 .about-hero {
-  background: #111;
-  color: #f5f5f5;
+  background: #f8f8f8;
   padding: 60px;
   border-left: 5px solid #c9a24d;
   margin: 40px 0 80px;
 }
 
 .about-hero p {
+  color: #222;
   font-size: 1.1rem;
   line-height: 1.9;
-  max-width: 800px;
+  max-width: 850px;
 }
 
-/* SECONDARY TEXT */
+/* =========================
+   SECONDARY TEXT
+========================= */
+
 .about-secondary {
   margin-bottom: 100px;
 }
@@ -1149,26 +1181,29 @@ section{
   font-size: 1.05rem;
   line-height: 1.9;
   max-width: 850px;
-  color: #444;
+  color: #333;
 }
 
-/* INTERNATIONAL EXPERIENCE */
+/* =========================
+   INTERNATIONAL EXPERIENCE
+========================= */
+
 .international {
-  background: #f5f5f5;
+  background: #f3f3f3;
   padding: 80px 60px;
   margin: 120px 0;
   border-radius: 6px;
 }
 
-.international h2 {
-  margin-bottom: 30px;
-}
-
 .international p {
   margin-bottom: 20px;
+  color: #333;
 }
 
-/* WHY US GRID */
+/* =========================
+   WHY US GRID
+========================= */
+
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1201,7 +1236,8 @@ section{
 }
 
 .why:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.12);
 }
 
 .why span {
@@ -1213,25 +1249,45 @@ section{
 .why p {
   font-size: 0.95rem;
   line-height: 1.7;
+  color: #222;
 }
 
-/* VISION & MISSION */
+/* =========================
+   VISION & MISSION
+========================= */
+
 .premium-about > p.big-text {
   max-width: 900px;
   margin-bottom: 60px;
+  font-size: 1.1rem;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
+  .premium-about {
+    padding: 80px 20px;
+  }
+
   .about-hero,
   .international {
     padding: 40px 24px;
   }
 
-  .premium-about {
-    padding: 80px 20px;
+  .premium-about h1 {
+    font-size: 36px;
+  }
+
+  .premium-about h2 {
+    font-size: 26px;
+    margin: 70px 0 24px;
   }
 }
+
+
 
 
 
