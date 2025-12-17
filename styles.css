@@ -1231,6 +1231,13 @@ section{
   line-height:1.9;
   color:#444;
 }
+.footer-bottom .credit{
+  opacity:0.55;
+  font-size:13px;
+  margin-left:6px;
+  white-space:nowrap;
+}
+
 
 
 
