@@ -447,8 +447,9 @@ section{
   padding:60px 20px 100px;
 
   display:grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  column-gap:60px;
+  grid-template-columns: 1fr 1fr;
+  column-gap:40px;
+  align-items:start;
 }
 
 /* LEFT COLUMN – TEXT */
@@ -460,9 +461,12 @@ section{
 
 /* WHY GRID ON RIGHT */
 .why-grid{
-  grid-column:2;
-  margin-top:40px;
+  background:#fafafa;
+  padding:30px 28px;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
 }
+
 
 /* WHY BOX */
 .why{
@@ -495,6 +499,7 @@ section{
     margin-top:20px;
   }
 }
+
 
 
 
