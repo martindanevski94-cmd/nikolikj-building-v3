@@ -1216,6 +1216,22 @@ section{
     pointer-events:none;
   }
 }
+.about-secondary{
+  max-width:900px;
+  margin:35px 0 0;
+  padding:26px 30px;
+  background:#fafafa;
+  border-radius:16px;
+  box-shadow:0 10px 28px rgba(0,0,0,0.06);
+}
+
+.about-secondary .big-text{
+  margin:0;
+  font-size:18px;
+  line-height:1.9;
+  color:#444;
+}
+
 
 
 
