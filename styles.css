@@ -308,33 +308,6 @@ section{
   object-fit:cover;
   border-radius:16px;
 }
-
-/* =========================
-   DIVIDER
-========================= */
-.section-divider{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:24px;
-  margin:40px auto;
-  padding:10px 0;
-  max-width:900px;
-}
-
-.divider-line{
-  flex:1;
-  height:2px;
-  background:#C59D5F;
-  opacity:0.8;
-}
-
-.divider-text{
-  font-size:18px;
-  font-weight:700;
-  color:#C59D5F;
-  white-space:nowrap;
-}
 /* =========================
    FOOTER – GLOBAL (ALL PAGES)
 ========================= */
@@ -1601,6 +1574,7 @@ section{
     white-space:normal;
   }
 }
+
 
 
 
