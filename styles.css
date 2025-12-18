@@ -1652,6 +1652,21 @@ section{
   text-align:center;
   white-space:nowrap;
 }
+/* FORCE CENTER FOR ALL DIVIDERS */
+.section-divider{
+  width:100vw;
+  margin-left:calc(-50vw + 50%);
+  margin-right:calc(-50vw + 50%);
+
+  display:flex;
+  justify-content:center;
+}
+
+.section-divider > *{
+  max-width:1200px;
+  width:100%;
+}
+
 
 
 
