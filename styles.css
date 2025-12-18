@@ -1695,6 +1695,68 @@ section{
     gap:18px;
   }
 }
+/* =========================
+   INTERNATIONAL TRUST DIVIDER
+========================= */
+
+.international-trust-divider{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  gap:36px;
+  margin:40px auto 30px;
+  padding-top:18px;
+  flex-wrap:wrap;
+  text-align:center;
+}
+
+/* gold divider line */
+.international-trust-divider::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  height:2px;
+  background:#C59D5F;
+  opacity:0.8;
+}
+
+/* text + check */
+.international-trust-divider span{
+  position:relative;
+  font-size:15px;
+  font-weight:600;
+  color:#111;
+  padding-left:20px;
+  white-space:nowrap;
+}
+
+/* check icon */
+.international-trust-divider span::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  color:#C59D5F;
+  font-weight:800;
+}
+
+/* mobile */
+@media(max-width:768px){
+  .international-trust-divider{
+    gap:18px;
+  }
+
+  .international-trust-divider::before{
+    width:160px;
+  }
+
+  .international-trust-divider span{
+    font-size:14px;
+  }
+}
+
 
 
 
