@@ -232,10 +232,6 @@ section{
   border-radius:18px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
   transition:0.3s;
-
-  display:flex;              /* ⬅️ додади */
-  flex-direction:column;     /* ⬅️ додади */
-  align-items:center;        /* ⬅️ додади */
 }
 
 
@@ -1579,6 +1575,7 @@ section{
     white-space:normal;
   }
 }
+
 
 
 
