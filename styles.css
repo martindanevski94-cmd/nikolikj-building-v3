@@ -310,90 +310,6 @@ section{
   border-radius:16px;
 }
 /* =========================
-   FOOTER – GLOBAL (ALL PAGES)
-========================= */
-.site-footer{
-  width:100%;
-  background:#111;
-  color:#fff;
-  margin-top:40px;
-}
-
-/* MAIN FOOTER GRID */
-.footer-container{
-  width:100%;
-  max-width:1200px;
-  margin:0 auto;
-  padding:30px 20px 20px;
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:30px;
-  align-items:flex-start;
-  box-sizing:border-box;
-}
-
-/* FOOTER COLUMNS */
-.footer-col{
-  font-size:15px;
-  line-height:1.8;
-}
-
-/* TITLES */
-.footer-title{
-  font-size:20px;
-  font-weight:800;
-  margin-bottom:18px;
-  color:#C59D5F;
-}
-
-/* LINKS */
-.footer-col a{
-  display:block;
-  margin-bottom:10px;
-  color:#fff;
-  opacity:0.85;
-  transition:0.3s;
-}
-
-.footer-col a:hover{
-  opacity:1;
-  color:#C59D5F;
-}
-
-/* LOGO */
-.footer-logo{
-  text-align:center;
-}
-
-.footer-logo img{
-  max-width:130px;
-  opacity:0.95;
-}
-
-/* BOTTOM BAR */
-.footer-bottom{
-  width:100%;
-  text-align:center;
-  padding:12px 15px;
-  font-size:13px;
-  background:#0b0b0b;
-  color:#aaa;
-}
-
-/* =========================
-   MOBILE FOOTER
-========================= */
-@media(max-width:768px){
-  .footer-container{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .footer-logo{
-    order:-1;
-  }
-}
-/* =========================
    MOBILE ONLY
 ========================= */
 @media (max-width: 768px){
@@ -521,89 +437,6 @@ section{
   }
 }
 /* =========================
-   FOOTER – FIXED & BALANCED
-========================= */
-.site-footer{
-  width:100%;
-  background:#111;
-  color:#fff;
-  margin-top:60px;
-}
-
-/* MAIN FOOTER GRID */
-.footer-container{
-  max-width:1200px;
-  margin:0 auto;
-  padding:40px 20px;
-  display:grid;
-  grid-template-columns:1fr auto 1fr; /* ⬅ централно лого */
-  align-items:center;               /* ⬅ вертикално усогласување */
-  gap:40px;
-  box-sizing:border-box;
-}
-
-/* FOOTER COLUMNS */
-.footer-col{
-  font-size:15px;
-  line-height:1.8;
-}
-
-/* TITLES */
-.footer-title{
-  font-size:20px;
-  font-weight:800;
-  margin-bottom:14px;
-  color:#C59D5F;
-}
-
-/* LINKS */
-.footer-col a{
-  display:block;
-  margin-bottom:8px;
-  color:#fff;
-  opacity:0.85;
-  transition:0.3s;
-}
-
-.footer-col a:hover{
-  opacity:1;
-  color:#C59D5F;
-}
-
-/* CENTER LOGO */
-.footer-logo{
-  text-align:center;
-}
-
-.footer-logo img{
-  max-width:150px;
-  display:inline-block;
-}
-
-/* BOTTOM BAR */
-.footer-bottom{
-  width:100%;
-  text-align:center;
-  padding:16px;
-  font-size:14px;
-  background:#0b0b0b;
-  color:#aaa;
-}
-
-/* =========================
-   MOBILE FOOTER
-========================= */
-@media(max-width:768px){
-  .footer-container{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .footer-logo{
-    margin:25px 0;
-  }
-}
-/* =========================
    CONTACT – CARD STYLE
 ========================= */
 .contact-page{
@@ -703,197 +536,11 @@ section{
   }
 }
 /* =========================
-   FOOTER – FINAL LAYOUT
-========================= */
-.site-footer{
-  background:#111;
-  color:#fff;
-  margin-top:80px;
-}
-
-/* GRID */
-.footer-container{
-  max-width:1200px;
-  margin:0 auto;
-  padding:60px 20px;
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:center;
-  gap:40px;
-}
-
-/* COLUMNS */
-.footer-col{
-  font-size:15px;
-  line-height:1.8;
-}
-
-.footer-left{
-  text-align:left;
-}
-
-.footer-right{
-  text-align:right;
-}
-
-.footer-center{
-  text-align:center;
-}
-
-/* TITLES */
-.footer-title{
-  font-size:20px;
-  font-weight:800;
-  margin-bottom:18px;
-  color:#C59D5F;
-}
-
-/* LINKS */
-.footer-col a{
-  display:block;
-  margin-bottom:10px;
-  color:#fff;
-  opacity:0.85;
-  transition:0.3s;
-}
-
-.footer-col a:hover{
-  opacity:1;
-  color:#C59D5F;
-}
-
-/* LOGO */
-.footer-center img{
-  max-width:160px;
-}
-
-/* BOTTOM */
-.footer-bottom{
-  text-align:center;
-  padding:18px;
-  font-size:14px;
-  background:#0b0b0b;
-  color:#aaa;
-}
-
-/* =========================
-   MOBILE FOOTER
-========================= */
-@media(max-width:768px){
-  .footer-container{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .footer-left,
-  .footer-right{
-    text-align:center;
-  }
-
-  .footer-center{
-    margin:25px 0;
-  }
-}
-/* =========================
    GALLERY PREVIEW BUTTON FIX
 ========================= */
 .preview .btn{
   margin: 30px auto 0;
   display: inline-block;
-}
-/* =========================
-   FOOTER – FINAL (USING SAME HTML)
-========================= */
-.site-footer{
-  background:#111;
-  color:#fff;
-  margin-top:70px;
-}
-
-/* MAIN GRID */
-.footer-container{
-  max-width:1200px;
-  margin:0 auto;
-  padding:50px 20px;
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:center;
-  gap:40px;
-}
-
-/* COLUMNS */
-.footer-col{
-  font-size:15px;
-  line-height:1.8;
-}
-
-/* LEFT / RIGHT BALANCE */
-.footer-container .footer-col:first-child{
-  text-align:left;
-}
-
-.footer-container .footer-col:last-child{
-  text-align:right;
-}
-
-/* CENTER LOGO */
-.footer-logo{
-  text-align:center;
-}
-
-.footer-logo img{
-  max-width:140px;
-  display:inline-block;
-}
-
-/* TITLES */
-.footer-title{
-  font-size:18px;
-  font-weight:800;
-  margin-bottom:16px;
-  color:#C59D5F;
-}
-
-/* LINKS */
-.footer-col a{
-  display:block;
-  margin-bottom:8px;
-  color:#fff;
-  opacity:0.85;
-  transition:0.25s;
-}
-
-.footer-col a:hover{
-  opacity:1;
-  color:#C59D5F;
-}
-
-/* BOTTOM BAR */
-.footer-bottom{
-  text-align:center;
-  padding:16px;
-  font-size:14px;
-  background:#0b0b0b;
-  color:#aaa;
-}
-
-/* =========================
-   MOBILE FOOTER
-========================= */
-@media(max-width:768px){
-  .footer-container{
-    grid-template-columns:1fr;
-    text-align:center;
-    gap:30px;
-  }
-
-  .footer-container .footer-col{
-    text-align:center !important;
-  }
-
-  .footer-logo img{
-    max-width:120px;
-  }
 }
 /* =========================
    GLOBAL BUTTON SYSTEM
@@ -1756,6 +1403,93 @@ section{
     font-size:14px;
   }
 }
+/* =========================
+   FOOTER – FINAL SINGLE
+========================= */
+
+.site-footer{
+  width:100%;
+  background:#111;
+  color:#fff;
+  margin-top:80px;
+}
+
+.footer-container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:60px 20px 40px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:40px;
+  align-items:flex-start;
+}
+
+.footer-col{
+  font-size:15px;
+  line-height:1.8;
+}
+
+.footer-col:first-child{
+  text-align:left;
+}
+
+.footer-col:last-child{
+  text-align:right;
+}
+
+.footer-title{
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:16px;
+  color:#C59D5F;
+}
+
+.footer-col a{
+  display:block;
+  margin-bottom:8px;
+  color:#fff;
+  opacity:0.85;
+  transition:0.25s;
+}
+
+.footer-col a:hover{
+  opacity:1;
+  color:#C59D5F;
+}
+
+.footer-logo{
+  text-align:center;
+}
+
+.footer-logo img{
+  max-width:140px;
+}
+
+.footer-bottom{
+  text-align:center;
+  padding:16px;
+  font-size:14px;
+  background:#0b0b0b;
+  color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:30px;
+  }
+
+  .footer-col{
+    text-align:center;
+  }
+
+  .footer-logo img{
+    max-width:120px;
+  }
+}
+
 
 
 
