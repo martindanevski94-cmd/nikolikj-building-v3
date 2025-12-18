@@ -1571,15 +1571,15 @@ section{
 ========================= */
 
 .section-divider{
-  display:flex;
+  display:grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items:center;
-  justify-content:center;
   gap:22px;
   margin: 80px 0 60px;
 }
 
+
 .divider-line{
-  flex:1;
   height:1px;
   background: linear-gradient(
     to right,
@@ -1587,7 +1587,6 @@ section{
     rgba(197,157,95,0.75),
     transparent
   );
-  max-width:260px;
 }
 
 .divider-text{
@@ -1599,7 +1598,6 @@ section{
   white-space:nowrap;
 }
 
-/* mobile */
 @media(max-width:768px){
   .section-divider{
     margin: 60px 0 40px;
@@ -1608,10 +1606,8 @@ section{
     font-size:16px;
     white-space:normal;
   }
-  .divider-line{
-    max-width:120px;
-  }
 }
+
 .service-box .icon{
   font-size:48px;
   margin-bottom:15px;
@@ -1622,6 +1618,7 @@ section{
     font-size:40px;
   }
 }
+
 
 
 
