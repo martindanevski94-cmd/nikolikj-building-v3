@@ -342,7 +342,7 @@ section{
   width:100%;
   background:#111;
   color:#fff;
-  margin-top:50px;
+  margin-top:40px;
 }
 
 /* MAIN FOOTER GRID */
@@ -350,10 +350,10 @@ section{
   width:100%;
   max-width:1200px;
   margin:0 auto;
-  padding:40px 20px 30px;
+  padding:30px 20px 20px;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
-  gap:40px;
+  gap:30px;
   align-items:flex-start;
   box-sizing:border-box;
 }
@@ -400,8 +400,8 @@ section{
 .footer-bottom{
   width:100%;
   text-align:center;
-  padding:14px 15px;
-  font-size:14px;
+  padding:12px 15px;
+  font-size:13px;
   background:#0b0b0b;
   color:#aaa;
 }
@@ -1468,6 +1468,7 @@ section{
     margin-bottom:35px;
   }
 }
+
 
 
 
