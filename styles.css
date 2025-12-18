@@ -1629,6 +1629,39 @@ section{
     padding:35px 24px 55px !important;
   }
 }
+/* =========================
+   INTERNATIONAL HERO – REAL CENTER FIX
+========================= */
+
+/* ensure content container is centered */
+.international-hero .international-content.centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  max-width: 860px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* make sure text inside is centered */
+.international-hero .international-content.centered,
+.international-hero .international-content.centered * {
+  text-align: center !important;
+}
+
+/* reduce any left bias from parent */
+.international-hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* beef up title spacing */
+.international-hero .international-title {
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+}
+
 
 
 
