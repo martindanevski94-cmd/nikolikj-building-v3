@@ -1555,20 +1555,19 @@ section{
 }
 
 .eu-quality-img{
-  width:120px;
+  width:170px;
   height:auto;
   display:block;
-
-  /* subtle professional shadow */
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.18));
 }
 
-/* mobile */
 @media(max-width:768px){
   .eu-quality-img{
-    width:95px;
+    width:120px;
   }
 }
+
+
 
 
 
