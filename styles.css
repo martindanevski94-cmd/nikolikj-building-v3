@@ -1539,6 +1539,36 @@ section{
     text-align:center;
   }
 }
+/* =========================
+   FOOTER – MOBILE FORCE CENTER (FIX)
+========================= */
+@media (max-width:768px){
+
+  .footer-container{
+    grid-template-columns:1fr !important;
+    text-align:center !important;
+  }
+
+  .footer-container .footer-col,
+  .footer-container .footer-col:first-child,
+  .footer-container .footer-col:last-child{
+    text-align:center !important;
+  }
+
+  .footer-col a{
+    text-align:center !important;
+  }
+
+  .footer-logo{
+    text-align:center !important;
+  }
+
+  .footer-logo img{
+    margin:0 auto !important;
+    display:block;
+  }
+}
+
 
 
 
