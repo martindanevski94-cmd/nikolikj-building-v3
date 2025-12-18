@@ -1661,6 +1661,41 @@ section{
   margin-top: 0 !important;
   margin-bottom: 24px !important;
 }
+/* ONLY FIX TRUST TEXT – NO LAYOUT CHANGE */
+.international-trust{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:32px;
+  margin:30px auto 0;
+  text-align:center;
+  flex-wrap:wrap;
+}
+
+.international-trust span{
+  position:relative;
+  font-size:15px;
+  font-weight:600;
+  color:#111;
+  padding-left:20px;
+  white-space:nowrap;
+}
+
+.international-trust span::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  color:#C59D5F;
+  font-weight:800;
+}
+
+/* mobile only spacing */
+@media(max-width:768px){
+  .international-trust{
+    gap:18px;
+  }
+}
+
 
 
 
