@@ -1575,6 +1575,66 @@ section{
     white-space:normal;
   }
 }
+/* =========================
+   INTERNATIONAL – CLEAN CENTERED
+========================= */
+
+.international-content.centered{
+  position:relative;
+  z-index:2;
+  max-width:820px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.international-title{
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:28px;
+  letter-spacing:0.4px;
+}
+
+.international-text p{
+  font-size:17px;
+  line-height:1.85;
+  color:#333;
+  margin-bottom:18px;
+}
+
+.international-points{
+  display:flex;
+  justify-content:center;
+  gap:32px;
+  margin-top:32px;
+  flex-wrap:wrap;
+}
+
+.international-points span{
+  font-size:14.5px;
+  font-weight:600;
+  color:#111;
+  position:relative;
+  padding-left:18px;
+}
+
+.international-points span::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  color:#C59D5F;
+}
+
+/* mobile */
+@media(max-width:768px){
+  .international-title{
+    font-size:28px;
+  }
+
+  .international-points{
+    gap:18px;
+  }
+}
+
 
 
 
