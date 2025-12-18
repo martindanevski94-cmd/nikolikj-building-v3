@@ -281,6 +281,44 @@ section{
 .service-box:hover{
   transform:translateY(-6px);
 }
+/* =========================
+   SERVICES – ICON & TEXT SCALE
+========================= */
+
+/* ICON */
+.service-box .icon{
+  font-size:64px;        /* ⬅️ поголеми икони */
+  margin-bottom:22px;
+  line-height:1;
+}
+
+/* TITLE */
+.service-box h3{
+  font-size:22px;        /* ⬅️ поголем наслов */
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+/* DESCRIPTION */
+.service-box p{
+  font-size:16.5px;      /* ⬅️ почитлив текст */
+  line-height:1.7;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .service-box .icon{
+    font-size:52px;
+  }
+
+  .service-box h3{
+    font-size:20px;
+  }
+
+  .service-box p{
+    font-size:15.5px;
+  }
+}
 
 /* =========================
    GALLERY PREVIEW
@@ -1568,6 +1606,7 @@ section{
     display:block;
   }
 }
+
 
 
 
