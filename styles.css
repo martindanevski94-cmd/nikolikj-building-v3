@@ -1576,118 +1576,60 @@ section{
   }
 }
 /* =========================
-   INTERNATIONAL – FINAL, REAL CENTER
+   INTERNATIONAL – FORCE CENTER FIX
 ========================= */
 
 /* HERO WRAPPER */
 .international-hero{
-  position:relative;
-  padding:40px 60px 70px;     /* ⬅️ НАСЛОВОТ ОДИ ПОГОРЕ */
-  margin:120px 0;
-  border-radius:26px;
-  background-image:url("images/international-experience.jpg");
-  background-size:cover;
-  background-position:center;
-  overflow:hidden;
-  box-shadow:0 25px 65px rgba(0,0,0,0.12);
+  padding:40px 60px 70px !important;
 }
 
-/* OVERLAY */
-.international-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    135deg,
-    rgba(255,255,255,0.96),
-    rgba(245,248,250,0.88)
-  );
-  z-index:1;
+/* CONTENT – FORCE CENTER */
+.international-hero .international-content.centered{
+  max-width:860px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
 }
 
-/* CONTENT – THIS IS THE KEY */
-.international-content.centered{
-  position:relative;
-  z-index:2;
-  max-width:860px;
-  margin:0 auto;             /* ⬅️ ХОРИЗОНТАЛЕН ЦЕНТАР */
-  text-align:center;         /* ⬅️ ТЕКСТ ВО ЦЕНТАР */
-}
-
-/* TITLE */
-.international-title{
-  font-size:38px;
-  font-weight:800;
-  color:#C59D5F;
-  margin:0 0 28px;            /* ⬅️ НЕМА TOP MARGIN */
-  letter-spacing:0.6px;
+/* TITLE – MOVE UP + CENTER */
+.international-hero .international-title{
+  margin-top:0 !important;
+  margin-bottom:26px !important;
+  text-align:center !important;
+  color:#C59D5F !important;
 }
 
 /* TITLE LINE */
-.international-title::after{
-  content:"";
-  display:block;
-  width:70px;
-  height:3px;
-  background:#C59D5F;
-  margin:14px auto 0;
+.international-hero .international-title::after{
+  margin-left:auto !important;
+  margin-right:auto !important;
 }
 
-/* TEXT BLOCK */
-.international-text{
-  max-width:780px;           /* ⬅️ ЧИТЛИВОСТ */
-  margin:0 auto;
+/* TEXT – CENTER & READABLE */
+.international-hero .international-text{
+  max-width:780px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
 }
 
-.international-text p{
-  font-size:17px;
-  line-height:1.9;
-  color:#333;
-  margin-bottom:18px;
+.international-hero .international-text p{
+  text-align:center !important;
 }
 
-/* TRUST POINTS */
-.international-points{
-  display:flex;
-  justify-content:center;
-  gap:32px;
-  margin-top:34px;
-  flex-wrap:wrap;
-}
-
-.international-points span{
-  font-size:14.5px;
-  font-weight:600;
-  color:#111;
-  position:relative;
-  padding-left:18px;
-}
-
-.international-points span::before{
-  content:"✔";
-  position:absolute;
-  left:0;
-  color:#C59D5F;
+/* TRUST POINTS – CENTER */
+.international-hero .international-points{
+  justify-content:center !important;
 }
 
 /* MOBILE */
 @media(max-width:768px){
   .international-hero{
-    padding:35px 26px 55px;
-    margin:80px 0;
-  }
-
-  .international-title{
-    font-size:28px;
-  }
-
-  .international-text p{
-    font-size:16px;
-  }
-
-  .international-points{
-    gap:18px;
+    padding:35px 24px 55px !important;
   }
 }
+
 
 
 
