@@ -1476,65 +1476,74 @@ section{
   margin: 40px 0;
 }
 
-/* EU Standards Badge – Premium */
-.trust-badge{
-  display:flex;
-  align-items:center;
-  gap:14px;
-
-  padding:16px 26px;
-  border-radius:999px;
-
-  background: rgba(255,255,255,0.7);
-  border: 1px solid rgba(197,157,95,0.45);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-.badge-icon{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  background: rgba(197,157,95,0.15);
-  border:1px solid rgba(197,157,95,0.35);
-
-  color:#C59D5F;
-  font-size:18px;
-}
-
-.badge-text{
-  display:flex;
-  flex-direction:column;
-  line-height:1.05;
-}
-
-.badge-top{
-  font-size:22px;
-  font-weight:900;
-  letter-spacing:0.08em;
-  color:#C59D5F;
-}
-
-.badge-bottom{
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:0.16em;
-  text-transform:uppercase;
-  color:#111;
-}
-
 /* Hover – subtle luxury */
 .trust-badge:hover{
   transform: translateY(-1px);
   box-shadow: 0 18px 36px rgba(0,0,0,0.16);
   transition: 0.25s ease;
 }
+/* =========================
+   EU CERTIFICATION BADGE
+========================= */
+
+.about-highlights.single{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 50px 0;
+}
+
+/* Outer badge */
+.eu-badge{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Ring */
+.eu-ring{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:2px solid #C59D5F;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:#fff;
+}
+
+/* Text */
+.eu-top{
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:0.12em;
+  color:#C59D5F;
+}
+
+.eu-middle{
+  font-size:18px;
+  margin:4px 0;
+  color:#C59D5F;
+}
+
+.eu-bottom{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:#333;
+}
+
+/* Optional subtle shadow */
+.eu-ring{
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
 
 
 
