@@ -1555,7 +1555,7 @@ section{
 }
 
 .eu-quality-img{
-  width:170px;
+  width:200px;
   height:auto;
   display:block;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,0.18));
@@ -1566,6 +1566,7 @@ section{
     width:120px;
   }
 }
+
 
 
 
