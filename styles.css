@@ -1566,6 +1566,53 @@ section{
     width:120px;
   }
 }
+/* =========================
+   SECTION DIVIDER
+========================= */
+
+.section-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  margin: 80px 0 60px;
+}
+
+.divider-line{
+  flex:1;
+  height:1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(197,157,95,0.75),
+    transparent
+  );
+  max-width:260px;
+}
+
+.divider-text{
+  font-size:18px;
+  font-weight:600;
+  color:#C59D5F;
+  letter-spacing:0.04em;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* mobile */
+@media(max-width:768px){
+  .section-divider{
+    margin: 60px 0 40px;
+  }
+  .divider-text{
+    font-size:16px;
+    white-space:normal;
+  }
+  .divider-line{
+    max-width:120px;
+  }
+}
+
 
 
 
