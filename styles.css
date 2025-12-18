@@ -1576,36 +1576,49 @@ section{
   }
 }
 /* =========================
-   INTERNATIONAL – CLEAN CENTERED
+   INTERNATIONAL – FINAL PREMIUM
 ========================= */
 
 .international-content.centered{
   position:relative;
   z-index:2;
-  max-width:820px;
+  max-width:860px;
   margin:0 auto;
   text-align:center;
 }
 
+/* TITLE */
 .international-title{
-  font-size:36px;
+  font-size:38px;
   font-weight:800;
-  margin-bottom:28px;
-  letter-spacing:0.4px;
+  color:#C59D5F;                 /* ⬅️ златен */
+  margin-bottom:30px;
+  letter-spacing:0.6px;
 }
 
+.international-title::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:3px;
+  background:#C59D5F;
+  margin:14px auto 0;            /* ⬅️ центар линија */
+}
+
+/* TEXT */
 .international-text p{
   font-size:17px;
-  line-height:1.85;
+  line-height:1.9;
   color:#333;
   margin-bottom:18px;
 }
 
+/* TRUST POINTS */
 .international-points{
   display:flex;
   justify-content:center;
   gap:32px;
-  margin-top:32px;
+  margin-top:34px;
   flex-wrap:wrap;
 }
 
@@ -1624,16 +1637,21 @@ section{
   color:#C59D5F;
 }
 
-/* mobile */
+/* MOBILE */
 @media(max-width:768px){
   .international-title{
     font-size:28px;
+  }
+
+  .international-text p{
+    font-size:16px;
   }
 
   .international-points{
     gap:18px;
   }
 }
+
 
 
 
